@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../js/book.js" defer></script>
+    <title>Javascript Library</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="text">
+                <h1>Library</h1>
+            </div>
+            <div class="button">
+                <button type="button" id="create-book">Create book</button>
+                <button type="button" id="login-button">Login</button>
+            </div>
+
+        </div>
+        <div class="library">
+            <div class="your-books">
+                <h1>Your Books</h1>
+            </div>
+            <div class="book-shelf">
+                <div class="books" id="books">
+                    
+                </div>
+            </div>
+        
+        </div>
+
+
+        <div class="pop-up-form" id="book-registration">
+            <form action="" class="form-container" id="submit-book-form">
+                <fieldset>
+                    <legend>Book Check-in</legend>
+                    <p>Required fields are labeled with "required"</p>
+                    <div>
+                        <label for="book-name">Book Name:</label>
+                        <input type="text" name="book-name" id="book-name" placeholder="Book's Name" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="author-name">Author Name:</label>
+                        <input type="text" name="author-name" id="author-name" placeholder="Author's Name" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="num-pages">Number of Pages: </label>
+                        <input type="number" name="num-pages" id="num-pages" placeholder="Num. pages" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label for="publish-date">Date of Publishing</label>
+                        <input type="date" name="publish-date" id="publish-date" placeholder="Publishing Date" required>
+                        <span></span>
+                    </div>
+                    <div id="button-grouping-form">
+                        <button type="submit" id="submit-book">Submit</button>
+                        <button type="button" id="cancel">Cancel</button>
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+    
+</body>
+</html>

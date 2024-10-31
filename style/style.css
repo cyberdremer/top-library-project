@@ -1,0 +1,158 @@
+
+
+:root {
+    --black-background: rgb(41,41,41);
+    --grey-linear-gradient: linear-gradient(90deg, rgba(41,41,41,1) 0%, rgba(161,151,151,1) 100%, rgba(255,255,255,1) 100%);
+}
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body, html {
+    margin: 0;
+    height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+.container .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--black-background);
+    background: var(--grey-linear-gradient);
+}
+
+.header .text h1{
+    color: white;
+    font-size: 60px;
+    margin-left: 100px;
+}
+
+.header .button{
+    margin-right: 100px;
+    display: flex;
+    gap: 3rem;
+}
+
+
+#login-button, #create-book{
+    border-radius: 10px;
+    background-color: wheat;
+    outline: none;
+    height: 80px;
+    width: 200px;
+    font-size: xx-large;
+}
+
+
+.container .library{
+    background-color: wheat;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+
+.your-books {
+    margin-left: 6.5rem;
+}
+
+.library .books {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(5, minmax(300px, 60%))
+}
+
+
+.library .book-shelf {
+    display: flex;
+    margin: 4rem;
+}
+
+
+.book{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    border-color: white;
+    border-width: 10px;
+    border-radius: 10px;
+    background-color: var(--black-background);
+    height: 400px;
+    width: 400px;
+    color: white;
+}
+
+
+.book .book-buttons{
+    display: flex;
+}
+
+
+
+fieldset > div {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 50px;
+    
+}
+
+fieldset {
+    border-color: var(--grey-linear-gradient);
+}
+
+
+.form-container #button-grouping-form {
+    justify-content: center;
+    gap: 10rem;
+}
+
+
+legend {
+    background-color: black;
+}
+
+
+
+.pop-up-form {
+    display: none;
+    position: fixed;
+    bottom: 50%;
+    right: 50%;
+    min-width: 600px;
+    min-height:0px;
+}
+
+
+.form-container {
+    background: var(--black-background);
+    background: var(--grey-linear-gradient);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.form-container input[type="text"], 
+.form-container input[type="date"],
+.form-container input[type="number"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+}
+
+
+input+span{
+    position: absolute;
+}
+
+
+
+
+
+
